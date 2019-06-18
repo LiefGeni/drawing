@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js实现画板</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+    </style>
+</head>
+<body>
+    <!-- <button id="eraser">橡皮擦</button>
+    <button id="brush">画笔</button> -->
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <div id="actions" class="actions">
+        <svg id="brush" class="icon active" aria-hidden="true">
+            <use xlink:href="#icon-brush"></use>
+        </svg>
+
+        <svg id="eraser"class="icon" aria-hidden="true">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg id="clear"class="icon" aria-hidden="true">
+                <use xlink:href="#icon-clear"></use>
+        </svg>  
+    </div>
+    <div class="download">
+            <svg id="download"class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-download"></use>
+            </svg>   
+    </div>
+    <ol id="colors">
+        <li id="black" class="active"></li>      
+        <li id="red"></li>
+        <li id="yellow"></li>
+        <li id="green"></li>
+        <li id="blue"></li>
+    </ol>
+    <ol id="line">
+            <li id="big" class="active"><span></span></li>      
+            <li id="middle"><span></span></li>
+            <li id="small"><span></span></li>
+        </ol>
+
+<script src="./js/demo.js"></script>
+<script src="//at.alicdn.com/t/font_727030_snhj43zvcd9.js"></script>
+</body>
+</html>
